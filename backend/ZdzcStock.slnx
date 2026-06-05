@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ZdzcStock.Api/ZdzcStock.Api.csproj" />
+    <Project Path="src/ZdzcStock.Application/ZdzcStock.Application.csproj" />
+    <Project Path="src/ZdzcStock.Domain/ZdzcStock.Domain.csproj" />
+    <Project Path="src/ZdzcStock.Infrastructure/ZdzcStock.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ZdzcStock.Tests/ZdzcStock.Tests.csproj" />
+  </Folder>
+</Solution>
