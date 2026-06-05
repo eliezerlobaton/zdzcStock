@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { smAndUp } = useDisplay();
-const drawer = ref(smAndUp.value);
+const drawer = ref<boolean | null>(null);
 
 const route = useRoute();
 
@@ -18,7 +18,6 @@ const pageTitle = computed(
 <template>
   <v-app>
     <v-navigation-drawer
-      v-if="route.path !== '/'"
       v-model="drawer"
       :permanent="$vuetify.display.smAndUp"
       :temporary="$vuetify.display.xs"
@@ -46,7 +45,6 @@ const pageTitle = computed(
 
     <v-app-bar elevation="0" border="b">
       <v-app-bar-nav-icon
-        v-if="route.path !== '/'"
         class="d-md-none"
         @click="drawer = !drawer"
       />
